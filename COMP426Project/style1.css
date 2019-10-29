@@ -53,21 +53,8 @@ dark blue - #5DA2D5
     color: black !important;
     border: solid 1px!important;
   }
-  
-  #description {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
-  }
 
-  #main {
-    background: #90CCF4;
-    margin: 50px;
-    padding: 15px;
-    border-radius: 10px;
-  }
-
-  #survey-form{
+  form{
     background: #ECECEC;
     margin-top: 50px;
     padding: 10px;
