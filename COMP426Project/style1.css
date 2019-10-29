@@ -1,0 +1,142 @@
+body {
+    color: #123C69;
+    font-family: sans-serif;
+    padding: 5px;
+  }
+  
+  input, select {
+     font-family:  sans-serif;
+     border: solid 0px black;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #123C69;
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    margin: 10px;
+    text-align: left;
+  }
+
+  hr {
+    color: #AC3B61;
+    border-style: solid;
+  }
+
+  textarea {
+    border: solid 0px black;
+    width: 500px;
+    height: 100px;
+    max-width: 95%;
+    max-height: 95%;
+    resize: vertical;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  textarea:hover{
+    font-size: 16px;
+    transition: .2s;
+  }
+  
+  label {
+    font-weight: bolder;
+  }
+  
+  button {
+    color: #AC3B61;
+    text-align: center;
+    background-color: #BAB2B5;
+    border: solid 1px #AC3B61;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  button:hover {
+    border-radius: 10%;
+    transition: .5s;
+  }
+  #description {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  #main {
+    background: rgba(237, 199, 188, .7);
+    margin: 50px;
+    padding: 15px;
+    min-height: 1100px;
+    border: solid 1px #AC3B61;
+  }
+
+  #survey-form{
+    min-height: 100%;
+    background: radial-gradient(rgba(238, 226, 220, .1), rgba(238, 226, 220, .5),rgba(238, 226, 220, 1));
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  #basic-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: solid 3px #AC3B61;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .column-containers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: solid 3px #AC3B61;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .column-items {
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 5px;
+    margin-bottom: 15px;
+  }
+
+  .basic-info-items {
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 5px;
+  }
+
+  .input-text {
+    width: 300px;
+    max-width: 90%;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 0px #AC3B61;
+  }
+
+  .input-number {
+    width: 50px;
+    max-width: 90%;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 0px #AC3B61;
+  }

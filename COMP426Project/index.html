@@ -1,41 +1,36 @@
+
 <html>
     <head>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
     </head>
-        <body>
-            <div id="main">
-                <h1 id=title>Create an Account<hr>
-                </h1>
-                <p id="description">Please fill out the following form to create an account.</p>
-                <form id=survey-form>
-                    <h2>Basic Information</h2>
-                    <div id="basic-info-container" class="containers">
-                        <div class="basic-info-items">
-                        <label id="name-label">Name: </label><br>
-                        <input type="text" id="name" class="input-text" placeholder="Enter your name" required>
-                    </div>
-                    <div class="basic-info-items">
-                        <label id="email-label">Email: </label><br>
-                        <input type="email" id="email" name="email" class="input-text" placeholder="Enter your email" required>
-                    </div>
-                    <div class="basic-info-items">
-                        <label id="number-label" value=""> Age:</label><br>
-                        <input type="number" id="number" class="input-number" placeholder="Enter your age" min="1" max="150">
-                    </div>
-                </div>
-                <h2>Security</h2>
-                <div id="basic-info-container" class="containers">
-                    <div class="basic-info-items">
-                    <label id="name-label" for="name">Username: </label><br>
-                    <input type="text" id="name" class="input-text" placeholder="Enter your name" required>
-                </div>
-                    <div class="basic-info-items">
-                    <label id="name-label">Password: </label><br>
-                    <input type="password" id="name" class="input-text" placeholder="Enter your name" required>
-                </div>
-                </div>
-                <button id="submit" type="submit">Submit</button>
-            </form>  
-        </div> 
+    <body>
+        <h1 class="title">Dream Team Music Library</h1>
+        <div class = "columns">
+            <a id = "button1" href = "signup.html" class="column">Create Account</a>
+            <a id = "button2" href = "search.html" class="column">Search Music</a>
+            <a id = "button3" href = "login.html" class="column">Log In</a>
+        </div>
+        <div class="section white">
+            <h2 class= "subtitle">The Dream Team Mission</h2>
+            <p class="content"> Our goal is to match peope with a state of the art API that helps them search for 
+            music recommendations based on their previous music interests.  You can easily Create
+            an account, log in, or search our music library by exploring the tabs above.  Enjoy!
+            </p>
+        </div>
+        <div class="columns is-multiline justify-center section">
+            <div class="column image-box">
+                <img src="images/drumset.jpg">
+            </div>
+            <div class="column image-box">
+                <img src="images/guitar.png">
+            </div>
+            <div class="column image-box">
+                <img src="images/headphones.svg">
+            </div>
+            <div class="column image-box">
+                <img src="images/piano.png">
+            </div>
+        </div>
     </body>
 </html>
