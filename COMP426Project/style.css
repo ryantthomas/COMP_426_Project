@@ -62,14 +62,13 @@ body {
   }
   button {
     color: #AC3B61;
-    align: center;
+    text-align: center;
     background-color: #BAB2B5;
     border: solid 1px #AC3B61;
     padding: 5px;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     margin: 10px;
-    text-items: center;
     border-radius: 10px;
   }
   button:hover {
