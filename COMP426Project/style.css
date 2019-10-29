@@ -1,12 +1,11 @@
 body {
     color: #123C69;
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     padding: 5px;
-    background-image: url(https://lh3.googleusercontent.com/Wd9ftmq0iZznH1hLI-FKORKHnjD1H3Ra-gtASi02oAZUdBO0Lk0S7g4XuVZtMeLAmRZ5Mxz3JvOt4cVnxnYC3Li-PfERvlWonkbcFxp5WoTELpg7DHtnU2oiyaF7KFYePmWKaYYVJtUlBLXpECCms4dLrcpTp0LuNifsPoJpNLOohaCy_V-d32E_UYLDOHwo-YvexKZn7ri114X2cN8z8WE-UftgQnGsBQFNNUwTg2KL0kSPeqzT2pOePb0C_ymNhzX905dJqcuZ-BZSG_y4kf3fTw0KVBxDr7XcBomHGtcnIt-W0m_HnJBqsf9WdmyQC5FjUIOa05og84G7331ZMhMhLXqPqncyDgWkSHd5PhI9W97cLwTYB_YLFVXHjhPUdcumCWY5bxl2zUd7LILjlp4oDNf30uVewUB7AYn-cjHC_t-UNDBjb-MnHkm1a583cZW4K8v72RuyoV3H9Yg9LPKFI1BdkuU6OwMoKqyXZALRFcjaNjd3kaWYHxp_Jw4sbSovjn0zOcva9yygEHvUpRlMXFyD8WZchgh0YjDywMOVMtqQ9OENw2bIs3Og4Ko26kfEcN5h1dUoY_k4xCrgVx77VpBhwagU-mdtd_Sbzet7EJLsQmVWvZRhEWCGKPdXnqsLBeF21dmFyghxt5Dz9L5dHG28eiLO=w1618-h1078-no);
   }
   
   input, select {
-     font-family: 'Montserrat', sans-serif;
+     font-family:  sans-serif;
      border: solid 0px black;
   }
 
@@ -23,18 +22,9 @@ body {
     text-align: left;
   }
 
-  p {
-  }
-
   hr {
     color: #AC3B61;
     border-style: solid;
-  }
-
-  ul {
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
   }
 
   textarea {
@@ -57,9 +47,7 @@ body {
   label {
     font-weight: bolder;
   }
-  input[type=checkbox] {
-    transform: scale(1.5);
-  }
+  
   button {
     color: #AC3B61;
     text-align: center;
@@ -72,10 +60,7 @@ body {
     border-radius: 10px;
   }
   button:hover {
-    background: linear-gradient(90deg, white, blue, white);
-    border-color: white;
-    border-radius: 10px;
-    color: white;
+    border-radius: 10%;
     transition: .5s;
   }
   #description {
@@ -131,6 +116,7 @@ body {
     margin: 5px;
     margin-bottom: 15px;
   }
+
   .basic-info-items {
     flex-grow: 1;
     max-width: 100%;
@@ -153,27 +139,4 @@ body {
     height: 20px;
     border-radius: 5px;
     border: solid 0px #AC3B61;
-  }
-  .dropdown {
-    width: 300px;
-    max-width: 90%;
-    height: 30px;
-    border-radius: 5px;
-    border: solid 0px #AC3B61;
-  }
-  
-  .checkbox {
-    margin-top: 2px;
-    font-size: 15px;
-    font-weight: normal;
-  }
-  
-  .radio {
-    transform: scale(1.5);
-    border: solid 4px #AC3B61;
-    margin: 5px;
-  }
-  .radio-text {
-    font-weight: normal;
-    font-size: 15px;
   }

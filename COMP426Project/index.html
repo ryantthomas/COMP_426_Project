@@ -1,7 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
     </head>
         <body>
             <div id="main">
@@ -12,7 +11,7 @@
                     <h2>Basic Information</h2>
                     <div id="basic-info-container" class="containers">
                         <div class="basic-info-items">
-                        <label id="name-label" for="name">Name: </label><br>
+                        <label id="name-label">Name: </label><br>
                         <input type="text" id="name" class="input-text" placeholder="Enter your name" required>
                     </div>
                     <div class="basic-info-items">
@@ -23,6 +22,17 @@
                         <label id="number-label" value=""> Age:</label><br>
                         <input type="number" id="number" class="input-number" placeholder="Enter your age" min="1" max="150">
                     </div>
+                </div>
+                <h2>Security</h2>
+                <div id="basic-info-container" class="containers">
+                    <div class="basic-info-items">
+                    <label id="name-label" for="name">Username: </label><br>
+                    <input type="text" id="name" class="input-text" placeholder="Enter your name" required>
+                </div>
+                    <div class="basic-info-items">
+                    <label id="name-label">Password: </label><br>
+                    <input type="password" id="name" class="input-text" placeholder="Enter your name" required>
+                </div>
                 </div>
                 <button id="submit" type="submit">Submit</button>
             </form>  
