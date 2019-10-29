@@ -4,10 +4,12 @@ body {
     padding: 5px;
     background-image: url(https://lh3.googleusercontent.com/Wd9ftmq0iZznH1hLI-FKORKHnjD1H3Ra-gtASi02oAZUdBO0Lk0S7g4XuVZtMeLAmRZ5Mxz3JvOt4cVnxnYC3Li-PfERvlWonkbcFxp5WoTELpg7DHtnU2oiyaF7KFYePmWKaYYVJtUlBLXpECCms4dLrcpTp0LuNifsPoJpNLOohaCy_V-d32E_UYLDOHwo-YvexKZn7ri114X2cN8z8WE-UftgQnGsBQFNNUwTg2KL0kSPeqzT2pOePb0C_ymNhzX905dJqcuZ-BZSG_y4kf3fTw0KVBxDr7XcBomHGtcnIt-W0m_HnJBqsf9WdmyQC5FjUIOa05og84G7331ZMhMhLXqPqncyDgWkSHd5PhI9W97cLwTYB_YLFVXHjhPUdcumCWY5bxl2zUd7LILjlp4oDNf30uVewUB7AYn-cjHC_t-UNDBjb-MnHkm1a583cZW4K8v72RuyoV3H9Yg9LPKFI1BdkuU6OwMoKqyXZALRFcjaNjd3kaWYHxp_Jw4sbSovjn0zOcva9yygEHvUpRlMXFyD8WZchgh0YjDywMOVMtqQ9OENw2bIs3Og4Ko26kfEcN5h1dUoY_k4xCrgVx77VpBhwagU-mdtd_Sbzet7EJLsQmVWvZRhEWCGKPdXnqsLBeF21dmFyghxt5Dz9L5dHG28eiLO=w1618-h1078-no);
   }
+  
   input, select {
      font-family: 'Montserrat', sans-serif;
      border: solid 0px black;
   }
+
   h1 {
     text-align: center;
     font-weight: bold;
@@ -15,21 +17,26 @@ body {
     font-size: 45px;
     margin-bottom: 5px;
   }
+
   h2 {
     margin: 10px;
     text-align: left;
   }
+
   p {
   }
+
   hr {
     color: #AC3B61;
     border-style: solid;
   }
+
   ul {
     list-style: none;
     margin: 5px;
     padding: 5px;
   }
+
   textarea {
     border: solid 0px black;
     width: 500px;
@@ -66,7 +73,7 @@ body {
     border-radius: 10px;
   }
   button:hover {
-    .background: linear-gradient(90deg, white, blue, white);
+    background: linear-gradient(90deg, white, blue, white);
     border-color: white;
     border-radius: 10px;
     color: white;
@@ -84,6 +91,7 @@ body {
     min-height: 1100px;
     border: solid 1px #AC3B61;
   }
+
   #survey-form{
     min-height: 100%;
     background: radial-gradient(rgba(238, 226, 220, .1), rgba(238, 226, 220, .5),rgba(238, 226, 220, 1));
@@ -92,6 +100,7 @@ body {
     border-radius: 25px;
     text-align: center;
   }
+
   #basic-info-container {
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +112,7 @@ body {
     border-radius: 10px;
     text-align: left;
   }
+
   .column-containers {
     display: flex;
     flex-direction: column;
@@ -115,6 +125,7 @@ body {
     border-radius: 10px;
     text-align: left;
   }
+
   .column-items {
     flex-grow: 1;
     max-width: 100%;
@@ -126,6 +137,7 @@ body {
     max-width: 100%;
     margin: 5px;
   }
+
   .input-text {
     width: 300px;
     max-width: 90%;
@@ -134,6 +146,7 @@ body {
     border-radius: 5px;
     border: solid 0px #AC3B61;
   }
+
   .input-number {
     width: 50px;
     max-width: 90%;

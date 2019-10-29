@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="custom_style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+    </head>
+        <body>
+            <div id="main">
+                <h1 id=title>
+                    Job Application <hr>
+                </h1>
+                <p id="description">Please fill out the following form to apply for any current position within our company</p>
+                <form id=survey-form>
+                    <h2>Basic Information</h2>
+                    <div id="basic-info-container" class="containers">
+                        <div class="basic-info-items">
+                        <label id="name-label" for="name">Name: </label><br>
+                        <input type="text" id="name" class="input-text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="basic-info-items">
+                    <   label id="email-label">Email: </label><br>
+                        <input type="email" id="email" name="email" class="input-text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="basic-info-items">
+                        <label id="number-label"> Age:</label><br>
+                        <input type="number" id="number" class="input-number" placeholder="Enter your age" min="1" max="150">
+                    </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>  
+        </div> 
+    </body>
+</html>
