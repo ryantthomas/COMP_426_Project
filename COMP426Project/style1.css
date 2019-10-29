@@ -48,6 +48,11 @@ dark blue - #5DA2D5
     border-radius: 10%;
     transition: .5s;
   }
+
+  hr {
+    color: black !important;
+    border: solid 1px!important;
+  }
   
   #description {
     text-align: center;
@@ -59,7 +64,7 @@ dark blue - #5DA2D5
     background: #90CCF4;
     margin: 50px;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 10px;
   }
 
   #survey-form{
@@ -73,7 +78,7 @@ dark blue - #5DA2D5
  .containers {
     text-align: center;
     padding: 15px;
-    border: solid 3px #AC3B61;
+    border: solid 2px #AC3B61;
     justify-content: center;
     align-items: stretch;
     margin: 10px;
