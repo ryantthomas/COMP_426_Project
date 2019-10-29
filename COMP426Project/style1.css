@@ -1,8 +1,10 @@
-body {
-    color: #123C69;
-    font-family: sans-serif;
-    padding: 5px;
-  }
+/* 
+red - #F78888
+yellow - #F3D250
+white bakckground - #ECECEC
+light blue - #90CCF4
+dark blue - #5DA2D5
+*/
   
   input, select {
      font-family:  sans-serif;
@@ -12,7 +14,7 @@ body {
   h1 {
     text-align: center;
     font-weight: bold;
-    color: #123C69;
+    color: black;
     font-size: 45px;
     margin-bottom: 5px;
   }
@@ -26,23 +28,6 @@ body {
     color: #AC3B61;
     border-style: solid;
   }
-
-  textarea {
-    border: solid 0px black;
-    width: 500px;
-    height: 100px;
-    max-width: 95%;
-    max-height: 95%;
-    resize: vertical;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  textarea:hover{
-    font-size: 16px;
-    transition: .2s;
-  }
   
   label {
     font-weight: bolder;
@@ -51,43 +36,42 @@ body {
   button {
     color: #AC3B61;
     text-align: center;
-    background-color: #BAB2B5;
-    border: solid 1px #AC3B61;
+    background-color: #5DA2D5;
+    border: none;
     padding: 5px;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
     margin: 10px;
     border-radius: 10px;
   }
+
   button:hover {
     border-radius: 10%;
     transition: .5s;
   }
+  
   #description {
     text-align: center;
     font-size: 14px;
     margin-top: 5px;
   }
+
   #main {
-    background: rgba(237, 199, 188, .7);
+    background: #90CCF4;
     margin: 50px;
     padding: 15px;
-    min-height: 1100px;
-    border: solid 1px #AC3B61;
+    border-radius: 25px;
   }
 
   #survey-form{
-    min-height: 100%;
-    background: radial-gradient(rgba(238, 226, 220, .1), rgba(238, 226, 220, .5),rgba(238, 226, 220, 1));
+    background: #ECECEC;
     margin-top: 50px;
     padding: 10px;
     border-radius: 25px;
     text-align: center;
   }
 
-  #basic-info-container {
-    display: flex;
-    flex-wrap: wrap;
+ .containers {
+    text-align: center;
     padding: 15px;
     border: solid 3px #AC3B61;
     justify-content: center;
