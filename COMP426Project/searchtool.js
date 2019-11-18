@@ -8,7 +8,7 @@ export const onSearchClick = async function (event){
     let searchText = $('.input').val();
     let songData = await searchRequest(searchText);
     let i;
-    let htmlString = `<div class = "results">`
+    let htmlString = `<div class = "results"> <h1> Recommended based on your search: </h1>`
     for (i=0; i < songData.Similar.Results.length; i++){
         htmlString += `<p> ${songData.Similar.Results[i].Name} </p>`;
     };
@@ -19,7 +19,7 @@ export const onSearchClick = async function (event){
 export const searchRequest = async function (searchText){
     const result = await axios({
         method: 'get',
-        url: 'https://tastedive.com/api/similar',
+        url: 'https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar',
         params: {
             q: searchText,
             k: '348775-GroupPro-QFR7GQLZ'
