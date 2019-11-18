@@ -4,12 +4,16 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     </head>
     <body>
-        <div class="section has-text-left">
+        <div id ="root" class="section has-text-left">
             <h1 class=title>Search</h1>
             <div class="columns">
                     <input type="text" class="input" placeholder="Search specific artists or songs" required>
-                    <button class="button is-primary is-focused">Search</button>
+                    <button id = "search-button" class="button is-primary is-focused">Search</button>
             </div>
+            <div class = "results"> </div>
         </div>
+        <script src = "searchtool.js" type = "module"> </script>
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>
