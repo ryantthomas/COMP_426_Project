@@ -25,7 +25,8 @@ export const searchRequest = async function (searchText){
         params: {
             q: searchText,
             k: '348775-GroupPro-QFR7GQLZ',
-            type: 'music'
+            type: 'music',
+            info: 1
         }
     });
     return result.data;
