@@ -6,6 +6,8 @@ $(function () {
 
 export const onSearchClick = async function (event){
     let searchText = $('.input').val();
+    let searchButton = $(event.target).closest(".search");
+    //searchButton.replaceWith(`<button class "button is-loading is-primary">Loading</button>`);
     let songData = await searchRequest(searchText);
     let i;
     let htmlString = `<div id = "results"> <h1 class = "title is-4"> Recommended based on your search: </h1>`
@@ -13,7 +15,6 @@ export const onSearchClick = async function (event){
         htmlString += `<div class = "column">  <div class = "box"> <p> ${songData.Similar.Results[i].Name} </p> 
             <small> ${songData.Similar.Results[i].Type} </small> </div> </div>`;
     };
-    //htmlString += `</div>`;
     $('#results').replaceWith(htmlString);
 };
 
