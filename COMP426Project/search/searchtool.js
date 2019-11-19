@@ -29,9 +29,6 @@ export const onSearchClick = async function (event){
     $('#results').replaceWith(htmlString);
     //Returns search bar to normal
     searchDiv.replaceWith(`<div class="columns search-div">
-                                <input type="text" class="input" placeholder="Search specific artists or songs" required>
-                                <button id = "search-button" class="button is-primary is-focused search">Search</button>
-                            </div>`);
         <input type="text" class="input" placeholder="Search specific artists or songs" required>
         <button id = "search-button" class="button is-primary is-focused search">Search</button> </div>`);
 };
@@ -49,6 +46,3 @@ export const searchRequest = async function (searchText){
     });
     return result.data;
 };
-
-
-
