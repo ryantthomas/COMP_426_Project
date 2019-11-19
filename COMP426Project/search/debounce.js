@@ -33,9 +33,14 @@ let matches = function() {
     let inputValue = document.getElementById("search-box").value;
     for(let i = 0; i < terms.length; i++) {
         if(terms[i].toUpperCase().startsWith(inputValue.toUpperCase())) {
-            $artistsList.append(`<p class="list-item subtitle">${terms[i]}</p>`);
+            $artistsList.append(`<p id = ${terms[i]} class="list-item subtitle">${terms[i]}</p>`);
         }
     }
+}
+
+let onDebounceClick = function(event){
+    let artistName = $(event.target).text();
+    $('#search-box').val(artistName);
 }
 
 let setEvents = function() {
@@ -45,4 +50,6 @@ let setEvents = function() {
 
 $(function() {
     setEvents();
-  });
+    $('#root').on('click', ".list-item", onDebounceClick);
+    //$('#root').on('click', '#search-button', setEvents);
+});

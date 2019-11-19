@@ -15,14 +15,16 @@ export const onSearchClick = async function (event){
         let i;
         htmlString += `<div id = "results"> <h1 class = "title is-4"> Recommended based on your search: </h1>`
         for (i=0; i < songData.Similar.Results.length; i++){
-        htmlString += `<div class = "column">  <div class = "box"> <p> ${songData.Similar.Results[i].Name} </p> 
-            <a href = ${songData.Similar.Results[i].wUrl}> Wikipedia </a> </div> </div>`;
+        htmlString += `<div class = "box"> <p> ${songData.Similar.Results[i].Name} </p> 
+            <a href = ${songData.Similar.Results[i].wUrl}> Wikipedia </a> </div>`;
         };
     };
     $('#results').replaceWith(htmlString);
     searchDiv.replaceWith(`<div class="columns search-div">
-        <input type="text" class="input" placeholder="Search specific artists or songs" required>
+        <input id = "search-box" type="text" class="input" placeholder="Search specific artists or songs" required>
         <button id = "search-button" class="button is-primary is-focused search">Search</button> </div>`);
+    let $artistsList = $("#artists");
+    $artistsList.replaceWith(`<div id="artists" class="artists"></div>`);
 };
 
 export const searchRequest = async function (searchText){
