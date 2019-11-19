@@ -6,11 +6,11 @@ $(function () {
 
 export const onSearchClick = async function (event){
     let searchText = $('.input').val();
+
     let searchButton = $(event.target).closest(".search");
     let searchDiv = $(event.target).closest(".search-div");
     searchButton.replaceWith(`<button id="search-button" class="button is-loading is-primary search">Loading</button>`); 
     let songData = await searchRequest(searchText);
-    
     //For loop adding boxes of songs
     let i;
     let htmlString = `<div id = "results"> <h1 class = "title is-4"> Recommended based on your search: </h1>`
@@ -20,10 +20,11 @@ export const onSearchClick = async function (event){
     };
     
     $('#results').replaceWith(htmlString);
+    //Returns search bar to normal
     searchDiv.replaceWith(`<div class="columns search-div">
-        <input type="text" class="input" placeholder="Search specific artists or songs" required>
-        <button id = "search-button" class="button is-primary is-focused search">Search</button>
-    </div>`);
+                                <input type="text" class="input" placeholder="Search specific artists or songs" required>
+                                <button id = "search-button" class="button is-primary is-focused search">Search</button>
+                            </div>`);
 };
 
 export const searchRequest = async function (searchText){
