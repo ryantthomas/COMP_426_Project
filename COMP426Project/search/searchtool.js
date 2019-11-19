@@ -6,7 +6,7 @@ export const onSearchClick = async function (event){
     let searchText = $('.input').val();
     let searchButton = $(event.target).closest(".search");
     let searchDiv = $(event.target).closest(".search-div");
-    searchButton.replaceWith(`<button id="search-button" class="button is-loading is-primary search">Loading</button>`); 
+    searchButton.replaceWith(`<button id="search-button" class="button is-loading is-primary is-large search">Loading</button>`); 
     let songData = await searchRequest(searchText);
     let htmlString = ``;
     if (songData.Similar.Results.length == 0){
@@ -21,8 +21,8 @@ export const onSearchClick = async function (event){
     };
     $('#results').replaceWith(htmlString);
     searchDiv.replaceWith(`<div class="columns search-div">
-        <input id = "search-box" type="text" class="input" placeholder="Search specific artists or songs" required>
-        <button id = "search-button" class="button is-primary is-focused search">Search</button> </div>`);
+        <input id = "search-box" type="text" class="input is-large" placeholder="Search specific artists or songs" required>
+        <button id = "search-button" class="button is-primary is-focused is-large search">Search</button> </div>`);
     let $artistsList = $("#artists");
     $artistsList.replaceWith(`<div id="artists" class="artists"></div>`);
 };
