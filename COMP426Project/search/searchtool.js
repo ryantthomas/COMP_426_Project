@@ -3,25 +3,27 @@ $(function () {
     $('#root').on('click', '#search-button', onSearchClick);
 });
 
-
 export const onSearchClick = async function (event){
     let searchText = $('.input').val();
     let searchButton = $(event.target).closest(".search");
     let searchDiv = $(event.target).closest(".search-div");
     searchButton.replaceWith(`<button id="search-button" class="button is-loading is-primary search">Loading</button>`); 
     let songData = await searchRequest(searchText);
-    //For loop adding boxes of songs
-    let i;
-    let htmlString = `<div id = "results"> <h1 class = "title is-4"> Recommended based on your search: </h1>`
-    for (i=0; i < songData.Similar.Results.length; i++){
+    let htmlString = ``;
+    if (songData.Similar.Results.length == 0){
+        htmlString += `<div id = "results"> <h1 class = "title is-4"> No results </h1> </div>`;
+    } else {
+        let i;
+        htmlString += `<div id = "results"> <h1 class = "title is-4"> Recommended based on your search: </h1>`
+        for (i=0; i < songData.Similar.Results.length; i++){
         htmlString += `<div class = "column">  <div class = "box"> <p> ${songData.Similar.Results[i].Name} </p> 
             <a href = ${songData.Similar.Results[i].wUrl}> Wikipedia </a> </div> </div>`;
+        };
     };
     $('#results').replaceWith(htmlString);
     searchDiv.replaceWith(`<div class="columns search-div">
         <input type="text" class="input" placeholder="Search specific artists or songs" required>
-        <button id = "search-button" class="button is-primary is-focused search">Search</button>
-    </div>`);
+        <button id = "search-button" class="button is-primary is-focused search">Search</button> </div>`);
 };
 
 export const searchRequest = async function (searchText){
