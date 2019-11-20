@@ -1,19 +1,22 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title> Search </title>
-        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     </head>
-    <body>
+    <body class="is-family-monospace">
+        <a href= "../index.html"> Back to homepage </a>
         <div id ="root" class="section has-text-left">
             <h1 class="title is-1">Search</h1>
             <div class="columns search-div">
-                    <input type="text" class="input" placeholder="Search specific artists or songs" required>
+                    <input id = "search-box" type="text" class="input" placeholder="Search specific artists" required>
                     <button id = "search-button" class="button is-primary is-focused search">Search</button>
             </div>
+            <div id="artists" class="artists"></div>
             <div id = "results"> </div>
         </div>
         <script src = "searchtool.js" type = "module"> </script>
+        <script src = "debounce.js" type = "module"> </script>
         <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>

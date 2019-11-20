@@ -1,15 +1,3 @@
-/* 
-red - #F78888
-yellow - #F3D250
-white bakckground - #ECECEC
-light blue - #90CCF4
-dark blue - #5DA2D5
-*/
-
-a {
-    color: black;
-    text-decoration: none;
-}
 body {
     background-color: #ECECEC;
     text-align: center;
@@ -20,14 +8,13 @@ a {
     font-size: 20px;
     border: none;
     padding: 20px;
-    margin: 5px;
     border-radius: 20px;
     vertical-align: middle !important;
 }
 
 a:hover {
-    transform: scale(1.1);
-    transition: .5s;
+    transform: scale(0.95);
+    transition: .3s;
 }
 
 h1 {
@@ -49,24 +36,31 @@ img {
 }
 
 #button1 {
+    text-decoration: none !important;
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F3D250;
+    box-shadow: 10px 10px 10px #D8D8D8;
 }
 
 #button2 {
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #90CCF4;
+    box-shadow: 10px 10px 10px #D8D8D8;
 }
 
 #button3 {
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F78888;
+    box-shadow: 10px 10px 10px #D8D8D8;
 }
 
 .column {
@@ -75,14 +69,8 @@ img {
     border: none;
 }
 
-
 .title {
     padding: 40px 10px 30px 0px;
-}
-
-.white {
-    background-color: white;
-    text-align: center;
 }
 
 .image-box {
@@ -104,4 +92,8 @@ img {
 
 .section {
     width: 100%;
+}
+
+.title {
+    font-size: 75px !important;
 }
