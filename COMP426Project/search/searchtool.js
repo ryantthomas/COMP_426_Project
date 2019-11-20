@@ -21,7 +21,7 @@ export const onSearchClick = async function (event){
     };
     $('#results').replaceWith(htmlString);
     searchDiv.replaceWith(`<div class="columns search-div">
-        <input id = "search-box" type="text" class="input" placeholder="Search specific artists or songs" required>
+        <input id = "search-box" type="text" class="input" placeholder="Search specific artists" required>
         <button id = "search-button" class="button is-primary is-focused search">Search</button> </div>`);
     let $artistsList = $("#artists");
     $artistsList.replaceWith(`<div id="artists" class="artists"></div>`);
