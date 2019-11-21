@@ -3,6 +3,20 @@ $(function () {
 });
 
 
+/**In order to post something to account.js you must first run:
+ * npm run dev-live-reload 
+ * Which starts the server/API or whatever its called
+ * Important to start the server before browser-sync, the server has to run on the 3000 port, if the 3000 port 
+ * is blocked by something (likely the server if you run it and forget to close it like me) 
+ * Enter this cmd line prompt:
+ * netstat  -ano  |  findstr <port number> 
+ * In this case '<port number>' can just be replaced by 3000 so: 
+ * netstat  -ano  |  findstr 3000
+ * The number that comes after LISTENING is a 'PID' number
+ * Go to Task Manager -> More Details (if not already showing) -> Details -> find the matching PID 
+ * Which should be some Node.js file running and just terminate the task
+*/
+
 const acctRoot = new axios.create({
     baseURL: "http://localhost:3000/account/"
 });
