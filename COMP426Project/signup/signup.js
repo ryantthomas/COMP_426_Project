@@ -17,9 +17,6 @@ $(function () {
  * Which should be some Node.js file running and just terminate the task
 */
 
-const acctRoot = new axios.create({
-    baseURL: "http://localhost:3000/account/"
-});
 
 async function createLogin (username, password, emailParam, full) {
     const response = await axios({
