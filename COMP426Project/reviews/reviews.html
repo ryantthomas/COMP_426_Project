@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <title> Reviews </title>
+</head>
+<body class =  "is-family-monospace">
+    <a href= "../index.html"> Back to homepage </a>
+    <div id ="root" class="section">
+            <h1 class="title is-2">Reviews</h1>
+            <form>
+                <label class = "label is-large">Leave your comments here </label>
+                <textarea class = "textarea is-family-monospace">Share your thoughts!</textarea> 
+                <button id = "reviewSubmit" class = "button is-dark is-family-monospace"> Submit </button> 
+            </form>
+            <div id = "reviews"> </div>
+    </div>
+    <script src = "reviews.js" type = "module"> </script>
+    <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
