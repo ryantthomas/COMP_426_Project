@@ -10,14 +10,16 @@
             <div class=" box content">
                 <div class="field">
                     <label class="label is-large">Username: </label>
-                    <input type="text" class="input is-info is-large" placeholder="Username" required>
+                    <input id = "userinput" type="text" class="input is-info is-large" placeholder="Username" required>
                 </div>
                 <div class="field">
                     <label class="label is-large">Password: </label>
-                    <input type="password" class="input is-info is-large" placeholder="Password" required>
+                    <input id = "passinput" type="password" class="input is-info is-large" placeholder="Password" required>
                 </div>
                 <button type="submit" class="button is-large">submit</button>
         </div>
-        
+        <script src = "login.js" type = "module"> </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>

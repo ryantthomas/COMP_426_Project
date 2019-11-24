@@ -1,2 +1,11 @@
 {
+  "users": {
+    "erinlyons": {
+      "passwordHash": "$2b$10$Y3xWFNDoe2TR3It5eI9MiuIZrDYiEDIpSgKFQWF7mtdp4jJd543le",
+      "data": {
+        "email": "erinlyons9@gmail.com",
+        "fullName": "Erin Lyons"
+      }
+    }
+  }
 }
