@@ -27,7 +27,7 @@ export const onSearchClick = async function (event){
     $artistsList.replaceWith(`<div id="artists" class="artists"></div>`);
 };
 
-export const searchRequest = async function (searchText){
+export const searchRequest = async function(searchText){
     const result = await axios({
         method: 'get',
         url: 'https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar',
