@@ -1,12 +1,11 @@
 //this will allow anyone to post a review, stored in public data store, 
 //and render results from public datastore with get call
-// NOT WORKING YET
+//NOT WORKING YET
 
 $(function(){
-    renderReviews();
+    postReview('');
     $('#root').on('#reviewSubmit', 'click', onReviewSubmit);
 });
-
 
 async function onReviewSubmit(event){
     event.preventDefault();
@@ -15,20 +14,31 @@ async function onReviewSubmit(event){
 };
 
 async function postReview(text){
-    const response = await axios({
+    const result = await axios({
         method: "post",
-        url: "http://localhost:3000/public/reviews",
+        url: "http://localhost:3000/public/authors/",
         data: {
-            "comment": text
+            "Pierce Brown": {},
+            "Brandon Sanderson": {},
+            "Michael J. Sullivan": {}
         }
     });
-    alert(response.code);
 };
 
 async function getReviews(){
-
+    const result = await axios({
+        method: "get",
+        url: "http://localhost:3000/public/reviews"
+    });
+    return result.data;
 };
 
 async function renderReviews(){
-
+    let data = await getReviews()
+    let i;
+    let htmlString = ``;
+    for (i=0; i<data.length; i++){
+        htmlString += `<p> ${data[i]} </p>`
+    }
+    $('#reviews').append(htmlString);
 };
