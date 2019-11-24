@@ -3,7 +3,7 @@
 //NOT WORKING YET
 
 $(function(){
-    postReview('');
+    renderReviews();
     $('#root').on('#reviewSubmit', 'click', onReviewSubmit);
 });
 
@@ -16,13 +16,12 @@ async function onReviewSubmit(event){
 async function postReview(text){
     const result = await axios({
         method: "post",
-        url: "http://localhost:3000/public/authors/",
+        url: "http://localhost:3000/public/reviews",
         data: {
-            "Pierce Brown": {},
-            "Brandon Sanderson": {},
-            "Michael J. Sullivan": {}
+            "comment": text
         }
     });
+    alert(result.code);
 };
 
 async function getReviews(){
