@@ -1,3 +1,11 @@
-{   
-
+{
+  "reviews": {
+    "comments": [
+      "Share your thoughts!",
+      "cool site",
+      "love it",
+      "found my new favorite artist!",
+      "fun"
+    ]
+  }
 }

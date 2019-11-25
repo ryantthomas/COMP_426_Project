@@ -4,24 +4,26 @@
 
 $(function(){
     renderReviews();
-    $('#root').on('#reviewSubmit', 'click', onReviewSubmit);
+    $('#root').on('click', '.button', onReview);
 });
 
-async function onReviewSubmit(event){
+export const onReview = async function(event){
     event.preventDefault();
     let review = $('.textarea').val();
-    await postReview(review);
+    let title = $('.input').val();
+    await postReview(review, title);
 };
 
-async function postReview(text){
+async function postReview(text, title){
+    //let title = title;
     const result = await axios({
         method: "post",
-        url: "http://localhost:3000/public/reviews",
-        data: {
-            "comment": text
+        url: "http://localhost:3000/public/reviews/comments",
+        data: { 
+            "data": [text],
+            "type": "merge"
         }
     });
-    alert(result.code);
 };
 
 async function getReviews(){
@@ -33,11 +35,11 @@ async function getReviews(){
 };
 
 async function renderReviews(){
-    let data = await getReviews()
+    let data = await getReviews();
     let i;
     let htmlString = ``;
-    for (i=0; i<data.length; i++){
-        htmlString += `<p> ${data[i]} </p>`
+    for (i=data.result.comments.length -1; i> -1; i--){
+        htmlString += `<p class = "box"> ${data.result.comments[i]} </p>`
     }
     $('#reviews').append(htmlString);
 };
