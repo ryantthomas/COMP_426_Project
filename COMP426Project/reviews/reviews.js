@@ -1,6 +1,5 @@
 //this will allow anyone to post a review, stored in public data store, 
 //and render results from public datastore with get call
-//NOT WORKING YET
 
 $(function(){
     renderReviews();
@@ -10,12 +9,10 @@ $(function(){
 export const onReview = async function(event){
     event.preventDefault();
     let review = $('.textarea').val();
-    let title = $('.input').val();
-    await postReview(review, title);
+    await postReview(review);
 };
 
-async function postReview(text, title){
-    //let title = title;
+async function postReview(text){
     const result = await axios({
         method: "post",
         url: "http://localhost:3000/public/reviews/comments",
