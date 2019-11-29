@@ -7,6 +7,8 @@ async function onLogin(event){
     let username = $('#userinput').val();
     let pass = $('#passinput').val();
     let jwt = await loginCall(username, pass);
+    //set the jwt to a cookie so it can be retrieved later
+    window.localStorage.setItem('jwt', jwt);
 };
 
 async function loginCall(username, pass){
@@ -18,7 +20,7 @@ async function loginCall(username, pass){
             pass: pass,
         }
     });
-    return response.jwt;
+    return response.data.jwt;
 };
 
 
