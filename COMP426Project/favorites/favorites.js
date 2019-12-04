@@ -7,6 +7,7 @@
 $(function(){
     renderFavorites();
     $('#main').on('click', '.submit', onSubmit);
+    $('#main').on('click', '.delete-btn', onDelete);
 });
 
 const onSubmit = async function(event) {
@@ -17,24 +18,38 @@ const onSubmit = async function(event) {
     let name = $('.song-name').val();
     let artist = $('.artist').val();
     let comment = $('.comments').val();
+    let id = Date.now();
     let object = {
+        id: id,
         username: username,
         name: name,
         artist: artist,
         comments: comment
     }
-    await postSuggestion(object);
+    await postSuggestion(object, id);
 };
 
-async function postSuggestion(suggestion){
+const onDelete = async function(event) {
+  //extracts the id of the tweet box
+  let suggestion = $(event.target).closest(".suggestion-box");
+  let id = suggestion.data("id");
+
+  //like the tweet
+  deleteSuggestion(id);
+
+  //Replaces with nothing
+  suggestion.replaceWith(``);
+}
+
+async function postSuggestion(suggestion, id){
+    let url = "http://localhost:3000/private/favorites/" +id;
     let token = window.localStorage.getItem('jwt');
     const result = await axios({
         method: "post",
-        url: "http://localhost:3000/private/favorites",
+        url: url,
         headers: { Authorization: `Bearer ${token}` },
         data: { 
             "data": suggestion,
-            "type": "merge"
         }
     });
 };
@@ -49,23 +64,27 @@ async function getFavorites(){
     return result.data;
 };
 
-async function onDelete(){
+async function getFavoritesAtID(id){
+    let url = "http://localhost:3000/private/favorites/" + id;
+    let token = window.localStorage.getItem('jwt');
+    const result = await axios({
+        method: "get",
+        url: url,
+        headers: { Authorization: `Bearer ${token}` }
+    });
+    return result.data;
+};
+
+async function deleteSuggestion(id){
+    let url = "http://localhost:3000/private/favorites/" +id;
     let token = window.localStorage.getItem('jwt');
     const result = await axios({
         method: "delete",
-        url: "http://localhost:3000/private/favorites",
+        url: url,
         headers: { Authorization: `Bearer ${token}` }
     });
 };
 
-async function onDelete(){
-    let token = window.localStorage.getItem('jwt');
-    const result = await axios({
-        method: "update",
-        url: "http://localhost:3000/private/favorites",
-        headers: { Authorization: `Bearer ${token}` }
-    });
-};
 
 
 async function renderFavorites(){
@@ -74,28 +93,30 @@ async function renderFavorites(){
     let userData = await callAccountInfo(token);
     let username = userData.user.name;
     let htmlString = ``;
-    for (let i=data.result.length -1; i> -1; i--) {
+    for (var i in data.result) {
+
         if(username != data.result[i].username) {
-                htmlString += `<div class = "box">
+                htmlString = `<div class = "box suggestion-box" data-id= ${data.result[i].id}>
                                     <label class="label">Username: </label>${data.result[i].username}
                                     <label class="label">Name: </label>${data.result[i].name} 
                                     <label class="label">Artist: </label>${data.result[i].artist}
                                     <label class="label">Comment: </label>${data.result[i].comments}
-                                </div>`;
+                                </div>`+htmlString;
         } else {
-            htmlString += `<div class = "box">
+            htmlString = `<div class = "box suggestion-box" data-id= ${data.result[i].id}>
                                     <label class="label">Username: </label>${data.result[i].username}
                                     <label class="label">Name: </label>${data.result[i].name} 
                                     <label class="label">Artist: </label>${data.result[i].artist}
                                     <label class="label">Comment: </label>${data.result[i].comments}
                                     <br><br>
-                                    <button class="button is-large is-info">Edit</button>
-                                    <button class="button is-large is-info"">Delete</button>
-                                </div>`;
+                                    <button class="button is-large is-info edit">Edit</button>
+                                    <button class="button is-large is-info delete-btn">Delete</button>
+                            </div>`+htmlString;
         }
     }
     $('#root').append(htmlString);
 };
+
 
 //gets the account information
 let callAccountInfo = async function(jwt) {

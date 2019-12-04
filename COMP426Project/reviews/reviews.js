@@ -6,7 +6,7 @@ $(function(){
     $('#root').on('click', '.button', onReview);
 });
 
-export const onReview = async function(event){
+export const onReview = async function(event) {
     event.preventDefault();
     let review = $('.textarea').val();
     await postReview(review);

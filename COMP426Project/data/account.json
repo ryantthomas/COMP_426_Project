@@ -13,6 +13,13 @@
         "email": "ryanthom@live.unc.edu",
         "fullName": "Ryan"
       }
+    },
+    "ry": {
+      "passwordHash": "$2b$10$HA1ghDAcTWBc6oIXJFjOu.ImOBHdnPh7A2qCsLm6gmnZ5Gpb8tqn2",
+      "data": {
+        "email": "ryanthom@gmail.com",
+        "fullName": "ryan"
+      }
     }
   }
 }
