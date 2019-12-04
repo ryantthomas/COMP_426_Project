@@ -1,18 +1,11 @@
 {
   "users": {
-    "erinlyons": {
-      "passwordHash": "$2b$10$Y3xWFNDoe2TR3It5eI9MiuIZrDYiEDIpSgKFQWF7mtdp4jJd543le",
+    "eglyons": {
+      "passwordHash": "$2b$10$qsAK6.L6ycpmUPhi1W3zNurtVzF2OE5KCqivZoMdT5NYpP5zr7ski",
       "data": {
-        "email": "erinlyons9@gmail.com",
-        "fullName": "Erin Lyons"
+        "email": "erin",
+        "fullName": "erin"
       }
-    },
-    "shua": {
-      "passwordHash": "$2b$10$xcFJ1Zi7.1drTnZ7JlJxeecp22PrKTYsHKcO67YdaXM.uh0bbRgya",
-      "data": {
-        "email": "shua@email.unc.edu",
-        "fullName": "Joshua Tabor"
-      }
-    },
+    }
   }
 }
