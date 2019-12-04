@@ -1,42 +1,5 @@
 {
   "eglyons": {
-    "searches": [
-      "Elizabeth Gillies",
-      "Victoria Justice",
-      "Fifth Harmony",
-      "Becky G",
-      "Bridgit Mendler",
-      "Austin Mahone",
-      "Little Mix",
-      "Mcclain",
-      "Cimorelli",
-      "Ross Lynch",
-      "Coco Jones",
-      "Nick Jonas",
-      "R5",
-      "Pia Mia",
-      "Miranda Cosgrove",
-      "Madison Beer",
-      "Benjamin Lasnier",
-      "Cher Lloyd",
-      "Camila Cabello",
-      "Meghan Trainor",
-      "Cody Simpson",
-      "Greyson Chance",
-      "Mattybraps",
-      "Carson Lueders",
-      "Jonas Brothers",
-      "Zayn Malik",
-      "Miley Cyrus",
-      "Atif Aslam",
-      "Joe Jonas",
-      "Louis Tomlinson",
-      "One Direction",
-      "Liam Payne",
-      "Harry Styles",
-      "Jack & Jack",
-      "Niall Horan",
-      "Selena Gomez"
-    ]
+    "artists": {}
   }
 }
