@@ -5,14 +5,21 @@
 //tokenStr = window.localStorage.getItem('jwt')
 //headers: { Authorization: `Bearer ${tokenStr}` }
 $(function(){
-    renderReviews();
-    //$('#root').on('click', '.button', onReview);
+    renderFavorites();
+    $('#main').on('click', '.submit', onSubmit);
 });
 
-const onReview = async function(event) {
+const onSubmit = async function(event) {
     event.preventDefault();
-    let review = $('.textarea').val();
-    await postReview(review);
+    let name = $('.song-name').val();
+    let artist = $('.artist').val();
+    let comment = $('.comments').val();
+    let object = {
+        name: name,
+        artist: artist,
+        comments: comment
+    }
+    await postSuggestion(object);
 };
 
 async function postSuggestion(suggestion){
@@ -38,13 +45,15 @@ async function getFavorites(){
     return result.data;
 };
 
-async function renderReviews(){
+async function renderFavorites(){
     let data = await getFavorites();
-    alert("hi");
     let htmlString = ``;
-    for (let i=data.result.comments.length -1; i> -1; i--) {
-        alert("in it");
-        htmlString += `<p class = "box"> ${data.result.comments[i]} </p>`
+    for (let i=data.result.length -1; i> -1; i--) {
+        htmlString += `<div class = "box"> 
+                            <label class="label">Name: </label>${data.result[i].name} 
+                            <label class="label">Artist: </label>${data.result[i].artist}
+                            <label class="label">Comment: </label>${data.result[i].comments}
+                        </div>`;
     }
-    $('#reviews').append(htmlString);
+    $('#root').append(htmlString);
 };
