@@ -10,11 +10,15 @@ $(function(){
 });
 
 const onSubmit = async function(event) {
+    let token = window.localStorage.getItem('jwt');
+    let userData = await callAccountInfo(token);
+    let username = userData.user.name;
     event.preventDefault();
     let name = $('.song-name').val();
     let artist = $('.artist').val();
     let comment = $('.comments').val();
     let object = {
+        username: username,
         name: name,
         artist: artist,
         comments: comment
@@ -45,15 +49,62 @@ async function getFavorites(){
     return result.data;
 };
 
+async function onDelete(){
+    let token = window.localStorage.getItem('jwt');
+    const result = await axios({
+        method: "delete",
+        url: "http://localhost:3000/private/favorites",
+        headers: { Authorization: `Bearer ${token}` }
+    });
+};
+
+async function onDelete(){
+    let token = window.localStorage.getItem('jwt');
+    const result = await axios({
+        method: "update",
+        url: "http://localhost:3000/private/favorites",
+        headers: { Authorization: `Bearer ${token}` }
+    });
+};
+
+
 async function renderFavorites(){
     let data = await getFavorites();
+    let token = window.localStorage.getItem('jwt');
+    let userData = await callAccountInfo(token);
+    let username = userData.user.name;
     let htmlString = ``;
     for (let i=data.result.length -1; i> -1; i--) {
-        htmlString += `<div class = "box"> 
-                            <label class="label">Name: </label>${data.result[i].name} 
-                            <label class="label">Artist: </label>${data.result[i].artist}
-                            <label class="label">Comment: </label>${data.result[i].comments}
-                        </div>`;
+        if(username != data.result[i].username) {
+                htmlString += `<div class = "box">
+                                    <label class="label">Username: </label>${data.result[i].username}
+                                    <label class="label">Name: </label>${data.result[i].name} 
+                                    <label class="label">Artist: </label>${data.result[i].artist}
+                                    <label class="label">Comment: </label>${data.result[i].comments}
+                                </div>`;
+        } else {
+            htmlString += `<div class = "box">
+                                    <label class="label">Username: </label>${data.result[i].username}
+                                    <label class="label">Name: </label>${data.result[i].name} 
+                                    <label class="label">Artist: </label>${data.result[i].artist}
+                                    <label class="label">Comment: </label>${data.result[i].comments}
+                                    <br><br>
+                                    <button class="button is-large is-info">Edit</button>
+                                    <button class="button is-large is-info"">Delete</button>
+                                </div>`;
+        }
     }
     $('#root').append(htmlString);
+};
+
+//gets the account information
+let callAccountInfo = async function(jwt) {
+    const response = await axios({
+        method: "get",
+        url: "http://localhost:3000/account/status",
+        headers: {
+            Authorization: `Bearer ${jwt}`
+        }
+    });
+    return response.data;
 };
