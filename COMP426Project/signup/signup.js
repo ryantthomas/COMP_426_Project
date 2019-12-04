@@ -35,7 +35,7 @@ async function createLogin (username, password, emailParam, full) {
 
 async function addToBackEnd(event) {
     event.preventDefault();
-    alert($('.usernameinput').val() + " " + $('.passwordinput').val())
+    //alert($('.usernameinput').val() + " " + $('.passwordinput').val())
     await createLogin(
     $('.usernameinput').val(), 
     $('.passwordinput').val(), 
