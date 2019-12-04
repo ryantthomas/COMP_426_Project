@@ -63,6 +63,15 @@ img {
     box-shadow: 10px 10px 10px #D8D8D8;
 }
 
+#button4 {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #90CCF4;
+    box-shadow: 10px 10px 10px #D8D8D8;
+}
+
 .column {
     margin: 20px;
     font-size: 20px;
