@@ -3,14 +3,15 @@
     <head>
         <title> Search </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
-    <body class="is-family-monospace">
+    <body class="is-family-monospace has-background-light box">
         <a href= "../index.html"> Back to homepage </a>
         <div id ="root" class="section has-text-left">
             <h1 class="title is-1">Search</h1>
             <div class="columns search-div">
-                    <input id = "search-box" type="text" class="input" placeholder="Search specific artists" required>
-                    <button id = "search-button" class="button is-primary is-focused search">Search</button>
+                    <input id = "search-box" type="text" class="input is-large" placeholder="Search specific artists" required>
+                    <button id = "search-button" class="button is-primary is-focused is-large search">Search</button>
             </div>
             <div id="artists" class="artists"></div>
             <div id = "results"> </div>
