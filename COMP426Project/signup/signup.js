@@ -31,6 +31,8 @@ async function createLogin (username, password, emailParam, full) {
             },
         },
     });
+    // include a then to redirect upon successful creation of the acocunt
+    // catch the error and display an html element to show theres an error
 }
 
 async function addToBackEnd(event) {
