@@ -24,6 +24,54 @@
           "Tony Yayo",
           "Too Short"
         ]
+      },
+      "adele": {
+        "results": [
+          "Bruno Mars",
+          "Duffy",
+          "Christina Perri",
+          "Jennifer Lopez",
+          "Alicia Keys",
+          "Christina Aguilera",
+          "Kelly Clarkson",
+          "Jessie J",
+          "Emeli Sandé",
+          "Beyoncé",
+          "Katy Perry",
+          "Maroon 5",
+          "Amy Winehouse",
+          "Kesha",
+          "Whitney Houston",
+          "Shakira",
+          "Leona Lewis",
+          "Justin Timberlake",
+          "Britney Spears",
+          "Sara Bareilles"
+        ]
+      },
+      "Adele": {
+        "results": [
+          "Bruno Mars",
+          "Christina Perri",
+          "Jessie J",
+          "Jennifer Lopez",
+          "Duffy",
+          "Alicia Keys",
+          "Christina Aguilera",
+          "Kelly Clarkson",
+          "Maroon 5",
+          "Amy Winehouse",
+          "Emeli Sandé",
+          "Beyoncé",
+          "Katy Perry",
+          "Kesha",
+          "Whitney Houston",
+          "Shakira",
+          "Leona Lewis",
+          "Justin Timberlake",
+          "Britney Spears",
+          "Sara Bareilles"
+        ]
       }
     }
   }
