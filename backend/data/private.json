@@ -5,7 +5,6 @@
       "username": "ryanthom",
       "name": "Thank you, next",
       "artist": "ariana grande",
-<<<<<<< HEAD:COMP426Project/data/private.json
       "comments": "I don't need a reason"
     },
     "1575493730462": {
@@ -14,14 +13,6 @@
       "name": "Hello",
       "artist": "Adele",
       "comments": "It's my favorite song"
-=======
-      "comments": "Ariana Grande is so good."
-    },
-    {
-      "name": "idk",
-      "artist": "erin lyons",
-      "comments": "awesome "
->>>>>>> b26200368a71fba590757db0b6715eec0c41024a:backend/data/private.json
     }
   }
 }
