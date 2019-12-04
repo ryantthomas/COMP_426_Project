@@ -6,6 +6,13 @@
         "email": "erin",
         "fullName": "erin"
       }
+    },
+    "ryanthom": {
+      "passwordHash": "$2b$10$wCqifvwGR/9xZPdsdDlqkegBYS8F38EXimceXEnPVYz0c5DUCte4u",
+      "data": {
+        "email": "ryanthom@live.unc.edu",
+        "fullName": "Ryan"
+      }
     }
   }
 }

@@ -1,11 +1,26 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     </head>
-    <body>
+    <body id="main">
+        <h1 class="section title has-text-left is-1 has-background-info has-text-white">User Favorites</h1>
+        <div class="section has-background-light">
+            <p class="content is-large">Post one of your favorite songs you found on our site for other users to see!</p>
+            <label class="label is-large">Song Name</label>
+            <input class="input is-large song-name">
+            <label class="label is-large">Artist</label>
+            <input class="input is-large artist">
+            <label class="label is-large">Why are you sharing?</label>
+            <input class="textarea is-large comments">
+            <br>
+            <button class="button submit is-large">Submit</button>
+        </div>
+        <div class="section">
+            <h2 class= title>What Past Users have Suggested</h2>
+            <div id="root"></div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="../node_modules/axios/dist/axios.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="favorites.js"></script>
     </body>
 </html>
