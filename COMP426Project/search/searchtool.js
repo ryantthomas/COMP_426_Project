@@ -23,7 +23,7 @@ export const onSearchClick = async function (event){
     let searchText = $('.input').val();
     let searchButton = $(event.target).closest(".search");
     let searchDiv = $(event.target).closest(".search-div");
-    searchButton.replaceWith(`<button id="search-button" class="button is-loading is-primary is-large search">Loading</button>`); 
+    searchButton.replaceWith(`<button id="search-button" class="button is-loading is-primary search">Loading</button>`); 
     let songData = await searchRequest(searchText);
     let htmlString = ``;
     if (songData.Similar.Results.length == 0){

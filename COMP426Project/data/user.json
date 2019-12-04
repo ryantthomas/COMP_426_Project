@@ -24,6 +24,66 @@
           "Tony Yayo",
           "Too Short"
         ]
+      },
+      "hi": {
+        "results": [
+          "Public Service Broadcasting",
+          "Big Bang",
+          "Shawn Mendes",
+          "Jessie J",
+          "Lindsey Stirling",
+          "Owl City",
+          "Passion Pit",
+          "Avril Lavigne"
+        ]
+      },
+      "": {
+        "results": [
+          "Meeting Of Important People",
+          "Soldout",
+          "Young & Sick",
+          "The Vanity Project",
+          "Tyler Bryant & The Shakedown",
+          "Thirsty Fish",
+          "Sombear",
+          "The High Court",
+          "Beachwood Sparks",
+          "Better Luck Next Time",
+          "Stars Of Track And Field",
+          "Promise Of Redemption",
+          "Tinted Windows",
+          "Kisses",
+          "The Music",
+          "Pretty Girls Make Graves",
+          "Zach Gill",
+          "Chappo",
+          "The Young Romans",
+          "Jarle Bernhoft"
+        ]
+      },
+      "Adele": {
+        "results": [
+          "Duffy",
+          "Jessie J",
+          "Bruno Mars",
+          "Christina Perri",
+          "Jennifer Lopez",
+          "Alicia Keys",
+          "Christina Aguilera",
+          "Kelly Clarkson",
+          "Emeli Sandé",
+          "Beyoncé",
+          "Katy Perry",
+          "Maroon 5",
+          "Amy Winehouse",
+          "Kesha",
+          "Whitney Houston",
+          "Shakira",
+          "Leona Lewis",
+          "Justin Timberlake",
+          "Sara Bareilles",
+          "Britney Spears"
+        ]
       }
     }
   }
