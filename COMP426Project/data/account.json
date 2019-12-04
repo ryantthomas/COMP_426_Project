@@ -6,6 +6,13 @@
         "email": "erinlyons9@gmail.com",
         "fullName": "Erin Lyons"
       }
+    },
+    "ryanthom": {
+      "passwordHash": "$2b$10$zudK.8Af.Fw/MKawcKb1zuiJ5qkJ459j2REbUpVQvu4olID/uHONi",
+      "data": {
+        "email": "ryanthom@live.unc.edu",
+        "fullName": "Ryan"
+      }
     }
   }
 }
