@@ -37,11 +37,11 @@ let renderSearches = async function(){
     let j;
     let htmlString = ``;
     for (j = 0; j < keys.length; j ++){
-        htmlString += `<div class = "section" id = '${keys[j]}'> Recommendations based on <strong> ${keys[j]} </strong> <ul>`;
+        htmlString += `<div class = "section box suggestions" id = '${keys[j]}'> <h2 class="subtitle is-3"> Recommendations based on <strong> ${keys[j]}</h2> </strong> <ul>`;
         for (i= 0; i < data[keys[j]].results.length; i ++){
             htmlString += `<li> ${data[keys[j]].results[i]} </li>`;
         }
-        htmlString += `</ul> <button class = "button">Remove from profile</button> </div>`;
+        htmlString += `<br><br></ul> <button class = "button is-large is-danger is-rounded is-link">Remove from profile</button> </div>`;
     }
     $(`#searches`).append(htmlString);
 }
