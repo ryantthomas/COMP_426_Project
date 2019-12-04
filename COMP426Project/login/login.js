@@ -9,6 +9,7 @@ async function onLogin(event){
     let jwt = await loginCall(username, pass);
     //set the jwt to a cookie so it can be retrieved later
     window.localStorage.setItem('jwt', jwt);
+    //to access jwt again use window.localStorage.getItem('jwt');
 };
 
 async function loginCall(username, pass){
