@@ -4,3 +4,12 @@
 .box > label {
     font-size: 25px;
 }
+.is-1 {
+    font-size: 100px !important;
+    height: 300px;
+    padding: 130px 0px 0px 20px !important;
+}
+a, .box {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+}
