@@ -36,7 +36,7 @@ async function renderReviews(){
     let i;
     let htmlString = ``;
     for (i=data.result.comments.length -1; i> -1; i--){
-        htmlString += `<p class = "box"> ${data.result.comments[i]} </p>`
+        htmlString += `<p class = "box comment">${data.result.comments[i]} </p>`
     }
     $('#reviews').append(htmlString);
 };

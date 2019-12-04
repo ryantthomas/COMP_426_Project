@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     <title> Reviews </title>
 </head>
-<body class =  "is-family-monospace">
+<body class =  "is-family-monospace has-background-light">
     <div id ="root">
             <a href= "../index.html"> Back to homepage </a>
-            <div class = "section">
-            <h1 class="title is-2 is-centered">Reviews</h1>
+            <h1 class="title is-1 has-text-centered">Reviews</h1>
+            <div class = "section box">
             <form>
                 <label class = "label is-large">Leave your comments here </label>
-                <textarea class = "textarea is-family-monospace">Share your thoughts!</textarea> 
+                <textarea class = "textarea is-family-monospace is-large">Share your thoughts!</textarea> 
                 <br>
-                <button class = "button is-dark is-family-monospace"> Submit </button> 
+                <button class = "button is-dark is-family-monospace is-large"> Submit </button> 
             </form>
             </div>
-            <div id = "reviews" class = "section box"> 
-                <label class = "label is-large"> Read what others think </label>
+            <div id = "reviews" class = "section has-background-light"> 
+                <label class = "label subtitle is-2"> Read what others think </label><br>
             </div>
     </div>
     <script src = "reviews.js" type = "module"> </script>
