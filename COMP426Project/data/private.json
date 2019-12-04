@@ -1,7 +1,9 @@
 {
     "favorites": {
         "suggestion": {
-            
+            "name": "Viva La Vida",
+            "artist": "Coldplay",
+            "comments": "Such a good Song"
         }
     }
 }
