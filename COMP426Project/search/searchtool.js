@@ -2,6 +2,21 @@ $(function () {
     $('#root').on('click', '#search-button', onSearchClick);
 });
 
+export const addToLiked = async function(text){
+    let token = window.localStorage.getItem('jwt');
+    const result = await axios({
+        method: "post",
+        url: "http://localhost:3000/user/searches",
+        headers: {
+            Authorization: `Bearer ${token}`
+        },
+        data: { 
+            "data": [text],
+            "type": "merge"
+        }
+    });
+};
+
 export const onSearchClick = async function (event){
     let searchText = $('.input').val();
     let searchButton = $(event.target).closest(".search");
@@ -15,6 +30,7 @@ export const onSearchClick = async function (event){
         let i;
         htmlString += `<div id = "results"> <h1 class = "title is-4"> Recommended based on your search: </h1>`
         for (i=0; i < songData.Similar.Results.length; i++){
+        await addToLiked (songData.Similar.Results[i].Name);
         htmlString += `<div class = "box"> <p> ${songData.Similar.Results[i].Name} </p> 
             <a href = ${songData.Similar.Results[i].wUrl}> Wikipedia </a> </div>`;
         };
