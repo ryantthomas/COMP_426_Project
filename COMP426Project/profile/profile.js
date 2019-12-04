@@ -1,15 +1,24 @@
 $(function(){
-    renderInfo();
-    renderSearches();
-    $('#searches').on('click', '.button', onDeletePress);
+    checkIfUser();
 })
+
+let checkIfUser = function(){
+    if (window.localStorage.getItem('jwt') == null){
+        alert("Not logged into an account. Please log in to access this page.")
+    }
+    else{
+        renderInfo();
+        renderSearches();
+        $('#searches').on('click', '.button', onDeletePress);
+    }
+}
 
 let onDeletePress = async function(event){
     event.preventDefault();
     let token = window.localStorage.getItem('jwt');
     let artist = event.target.closest('div').id;
     await callDelete(artist, token);
-    $(`#${artist}`).replaceWith('');
+    $(event.target.closest('div')).replaceWith('');
 }
 
 let renderInfo = async function(){
@@ -32,7 +41,7 @@ let renderSearches = async function(){
         for (i= 0; i < data[keys[j]].results.length; i ++){
             htmlString += `<li> ${data[keys[j]].results[i]} </li>`;
         }
-        htmlString += `</ul> <button class = "button"> Delete these results from profile</button> </div>`;
+        htmlString += `</ul> <button class = "button">Remove from profile</button> </div>`;
     }
     $(`#searches`).append(htmlString);
 }

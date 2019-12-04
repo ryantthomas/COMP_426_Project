@@ -3,19 +3,22 @@ $(function () {
 });
 
 export const addToLiked = async function(artist, text){
-    //preventDefault();
-    let token = window.localStorage.getItem('jwt');
-    const result = await axios({
-        method: "post",
-        url: "http://localhost:3000/user/artists/" + artist + "/results",
-        headers: {
-            Authorization: `Bearer ${token}`
-        },
-        data: { 
-            "data": [text],
-            "type": "merge"
-        }
-    });
+    if (window.localStorage.getItem('jwt') != null) {
+        let token = window.localStorage.getItem('jwt');
+        const result = await axios({
+            method: "post",
+            url: "http://localhost:3000/user/artists/" + artist + "/results",
+            headers: {
+                Authorization: `Bearer ${token}`
+            },
+            data: { 
+                "data": [text],
+                "type": "merge"
+            }
+        });
+    } else {
+        return;
+    }
 };
 
 export const onSearchClick = async function (event){
