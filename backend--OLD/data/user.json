@@ -52,6 +52,94 @@
           "Bad Suns",
           "Catfish And The Bottlemen"
         ]
+      },
+      "Adele": {
+        "results": [
+          "Christina Perri",
+          "Duffy",
+          "Bruno Mars",
+          "Jennifer Lopez",
+          "Jessie J",
+          "Christina Aguilera",
+          "Beyoncé",
+          "Katy Perry",
+          "Alicia Keys",
+          "Emeli Sandé",
+          "Kelly Clarkson",
+          "Maroon 5",
+          "Amy Winehouse",
+          "Kesha",
+          "Whitney Houston",
+          "Britney Spears",
+          "Sara Bareilles",
+          "Shakira",
+          "Leona Lewis",
+          "Justin Timberlake"
+        ]
+      }
+    }
+  },
+  "bob": {
+    "artists": {
+      "bob": {
+        "results": [
+          "Shawn Desman",
+          "Sterling Knight",
+          "Iyaz",
+          "Travie Mccoy",
+          "Kidz In The Hall",
+          "Mike Posner",
+          "Jakwob",
+          "Cali Swag District",
+          "DJ Khaled",
+          "Dappy",
+          "Kevin Rudolf",
+          "Maverick Sabre",
+          "New Boyz",
+          "N-Dubz",
+          "Soulja Boy Tell 'em",
+          "Shontelle",
+          "Matt White",
+          "Select Start",
+          "Cee-Lo Green",
+          "Aggro Santos"
+        ]
+      },
+      "hi": {
+        "results": [
+          "Public Service Broadcasting",
+          "Big Bang",
+          "Shawn Mendes",
+          "Jessie J",
+          "Lindsey Stirling",
+          "Owl City",
+          "Passion Pit",
+          "Avril Lavigne"
+        ]
+      },
+      "magic man": {
+        "results": [
+          "Hunter Hunted",
+          "The Royal Concept",
+          "Ghost Beach",
+          "Autoheart",
+          "The Griswolds",
+          "Royal Teeth",
+          "Pacific Air",
+          "Smallpools",
+          "The Colourist",
+          "Sir Sly",
+          "Wild Cub",
+          "Coasts",
+          "Bad Suns",
+          "Great Good Fine Ok",
+          "Saint Raymond",
+          "Blondfire",
+          "Youngblood Hawke",
+          "Grizfolk",
+          "Panama Wedding",
+          "Young Rising Sons"
+        ]
       }
     }
   }

@@ -20,6 +20,20 @@
         "email": "ryanthom@gmail.com",
         "fullName": "ryan"
       }
+    },
+    "rt": {
+      "passwordHash": "$2b$10$NTpRRG10L7sS9asKeWhL3uvrMxXPYArH2toT2/ux82Hz0Hnweq07a",
+      "data": {
+        "email": "RT@RT",
+        "fullName": "RT"
+      }
+    },
+    "bob": {
+      "passwordHash": "$2b$10$3qzEkYb47JEPnYcqd5ombOgL1T741MJrSiQdkYvwuMQSIJmPcKGDa",
+      "data": {
+        "email": "bob@bob.com",
+        "fullName": "bob"
+      }
     }
   }
 }
