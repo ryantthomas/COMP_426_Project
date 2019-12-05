@@ -1,0 +1,25 @@
+{
+  "users": {
+    "eglyons": {
+      "passwordHash": "$2b$10$qsAK6.L6ycpmUPhi1W3zNurtVzF2OE5KCqivZoMdT5NYpP5zr7ski",
+      "data": {
+        "email": "erin",
+        "fullName": "erin"
+      }
+    },
+    "ryanthom": {
+      "passwordHash": "$2b$10$wCqifvwGR/9xZPdsdDlqkegBYS8F38EXimceXEnPVYz0c5DUCte4u",
+      "data": {
+        "email": "ryanthom@live.unc.edu",
+        "fullName": "Ryan"
+      }
+    },
+    "ry": {
+      "passwordHash": "$2b$10$HA1ghDAcTWBc6oIXJFjOu.ImOBHdnPh7A2qCsLm6gmnZ5Gpb8tqn2",
+      "data": {
+        "email": "ryanthom@gmail.com",
+        "fullName": "ryan"
+      }
+    }
+  }
+}
