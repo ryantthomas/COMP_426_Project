@@ -105,18 +105,6 @@
           "Aggro Santos"
         ]
       },
-      "hi": {
-        "results": [
-          "Public Service Broadcasting",
-          "Big Bang",
-          "Shawn Mendes",
-          "Jessie J",
-          "Lindsey Stirling",
-          "Owl City",
-          "Passion Pit",
-          "Avril Lavigne"
-        ]
-      },
       "magic man": {
         "results": [
           "Hunter Hunted",
@@ -139,6 +127,82 @@
           "Grizfolk",
           "Panama Wedding",
           "Young Rising Sons"
+        ]
+      },
+      "rex orange county": {
+        "results": [
+          "Clairo",
+          "Boy Pablo",
+          "Gus Dapperton",
+          "Steve Lacy",
+          "Wallows",
+          "Conan Gray",
+          "Cuco",
+          "Kevin Abstract",
+          "Amine",
+          "Aminé",
+          "Declan Mckenna",
+          "Hippo Campus",
+          "Brockhampton",
+          "Smino",
+          "Girl In Red",
+          "Daniel Caesar",
+          "Jaden Smith",
+          "The Regrettes",
+          "Kali Uchis",
+          "Snail's House"
+        ]
+      }
+    }
+  },
+  "trinityt": {
+    "artists": {
+      "hozier": {
+        "results": [
+          "James Bay",
+          "George Ezra",
+          "Milky Chance",
+          "Vance Joy",
+          "Saint Raymond",
+          "Kodaline",
+          "Walking On Cars",
+          "Amber Run",
+          "Tom Odell",
+          "Years & Years",
+          "Sam Smith",
+          "Mikky Ekko",
+          "X Ambassadors",
+          "Hudson Taylor",
+          "Half Moon Run",
+          "Dotan",
+          "Bad Suns",
+          "Bleachers",
+          "Mighty Oaks",
+          "Catfish And The Bottlemen"
+        ]
+      },
+      "rex orange county": {
+        "results": [
+          "Boy Pablo",
+          "Steve Lacy",
+          "Wallows",
+          "Conan Gray",
+          "Cuco",
+          "Gus Dapperton",
+          "Kevin Abstract",
+          "Clairo",
+          "Amine",
+          "Aminé",
+          "Declan Mckenna",
+          "Hippo Campus",
+          "Brockhampton",
+          "Smino",
+          "Girl In Red",
+          "Daniel Caesar",
+          "Jaden Smith",
+          "The Regrettes",
+          "Kali Uchis",
+          "Snail's House"
         ]
       }
     }

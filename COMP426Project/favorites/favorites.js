@@ -123,12 +123,13 @@ async function renderFavorites(){
     for (var i in data.result) {
 
         if(username != data.result[i].username) {
-                htmlString = `<div class = "box suggestion-box" data-id= ${data.result[i].id}>
-                                    <label class="label">User: </label>${data.result[i].username}
-                                    <label class="label">Name: </label>${data.result[i].name} 
-                                    <label class="label">Artist: </label>${data.result[i].artist}
+            htmlString = `<div class = "box suggestion-box" data-id= ${data.result[i].id}>
+                                    <label class="label">User: </label>${data.result[i].username}<br><br>
+                                    <label class="label">Song: </label><i>${data.result[i].name}</i>
+                                    <br> by ${data.result[i].artist}<br><br>
                                     <label class="label">Reason for sharing: </label>${data.result[i].comments}
-                                </div>`+htmlString;
+                                    <br><br>
+                            </div>`+htmlString;
         } else {
             htmlString = `<div class = "box suggestion-box" data-id= ${data.result[i].id}>
                                     <label class="label">User: </label>${data.result[i].username}<br><br>
@@ -168,11 +169,12 @@ async function updateSuggestion(id) {
     let htmlString = ``;   
 
     if(username != data.result.username) {
-            htmlString = `<div class = "box suggestion-box" data-id= ${data.result.id}>
-                                <label class="label">User: </label>${data.result.username}
-                                <label class="label">Name: </label>${data.result.name} 
-                                <label class="label">Artist: </label>${data.result.artist}
-                                <label class="label">Reason for sharing: </label>${data.result.comments}
+            htmlString = `<div class = "box suggestion-box" data-id= ${data.result[i].id}>
+                                    <label class="label">User: </label>${data.result[i].username}<br><br>
+                                    <label class="label">Song: </label><i>${data.result[i].name}</i>
+                                    <br> by ${data.result[i].artist}<br><br>
+                                    <label class="label">Reason for sharing: </label>${data.result[i].comments}
+                                    <br><br>
                             </div>`+htmlString;
     } else {
         htmlString = `<div class = "box suggestion-box" data-id= ${data.result.id}>

@@ -34,6 +34,13 @@
         "email": "bob@bob.com",
         "fullName": "bob"
       }
+    },
+    "trinityt": {
+      "passwordHash": "$2b$10$raEXovNBGhWCN.slJagc3.i/bxMi1gDvw32rDI75IogXT.oVZe3vu",
+      "data": {
+        "email": "hello@hi.org",
+        "fullName": "Trinity"
+      }
     }
   }
 }
