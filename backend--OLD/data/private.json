@@ -7,12 +7,21 @@
       "artist": "ariana grande",
       "comments": "I don't need a reason"
     },
+<<<<<<< HEAD:COMP426Project/data/private.json
     "1575498262103": {
       "id": 1575498262103,
       "username": "ryanthom",
       "name": "Cherry Wine",
       "artist": "Hozier",
       "comments": "I like it"
+=======
+    "1575493730462": {
+      "id": 1575493730462,
+      "username": "ryanthom",
+      "name": "Hello",
+      "artist": "Adele",
+      "comments": "It's my favorite song"
+>>>>>>> ebd584eb74c336d9cc3f6f01ba2765cc0fe231a1:backend--OLD/data/private.json
     }
   }
 }
