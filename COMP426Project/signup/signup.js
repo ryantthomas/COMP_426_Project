@@ -30,7 +30,13 @@ async function createLogin (username, password, emailParam, full) {
                 fullName: full, 
             },
         },
-    });
+    }).then(
+        (response) => {
+            alert(response.status);
+        }
+    ).catch(err => {
+        alert(e.status);
+    })
     // include a then to redirect upon successful creation of the acocunt
     // catch the error and display an html element to show theres an error
 }
