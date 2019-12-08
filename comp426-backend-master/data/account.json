@@ -27,6 +27,13 @@
         "email": "erinlyons9@gmail.com",
         "fullName": "Erin Lyons"
       }
+    },
+    "shua": {
+      "passwordHash": "$2a$10$QmV.if1yh8Vds8/O.MfnBebMalSBP1bzJD8HzHUbKnHzNlmoNvRbC",
+      "data": {
+        "email": "shua@email.unc.edu",
+        "fullName": "Josh"
+      }
     }
   }
 }

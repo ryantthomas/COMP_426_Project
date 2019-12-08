@@ -1,5 +1,8 @@
 $(function () {
-    $('#main').on('click', '.button', addToBackEnd);
+    $('#main').on('click', '#submit', addToBackEnd);
+    $('#main').on('click', '.deleteButton', function() {
+        $('#message').empty();
+    });
 });
 
 
@@ -32,11 +35,18 @@ async function createLogin (username, password, emailParam, full) {
         },
     }).then(
         (response) => {
-            alert(response.status);
+            // alert("Response " + response.status);
+            $('#message').empty();
+            $('#message').append('<div class = "notification is-success">' +
+            '<button class = "delete deleteButton "></button>Account successfully made. Return to the ' + 
+            '<a href  = "../index.html">homepage' + '</div>');
         }
     ).catch(err => {
-        alert(e.status);
-    })
+        // alert("Error " + err.response.status);
+        $('#message').empty();
+        $('#message').append('<div class = "notification is-danger">' +
+        '<button class = "delete deleteButton" id = "delete"></button>Unable to create account: ' + err.response.status +' error </div>');
+    });
     // include a then to redirect upon successful creation of the acocunt
     // catch the error and display an html element to show theres an error
 }
