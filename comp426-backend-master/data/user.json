@@ -1,30 +1,106 @@
 {
-    "eglyons": {
-      "artists": {
-        "Justin Timberlake": {
-          "results": [
-            "Timbaland",
-            "Sean Paul",
-            "Adam Levine",
-            "Ne-Yo",
-            "Usher",
-            "Jennifer Lopez",
-            "Will.I.Am",
-            "Flo Rida",
-            "Jason Derulo",
-            "Christina Aguilera",
-            "Ciara",
-            "Pitbull",
-            "Chris Brown",
-            "Enrique Iglesias",
-            "Bruno Mars",
-            "Robin Thicke",
-            "Britney Spears",
-            "Fergie",
-            "Mariah Carey",
-            "Alicia Keys"
-          ]
-        }
+  "eglyons": {
+    "artists": {
+      "Justin Timberlake": {
+        "results": [
+          "Timbaland",
+          "Sean Paul",
+          "Adam Levine",
+          "Ne-Yo",
+          "Usher",
+          "Jennifer Lopez",
+          "Will.I.Am",
+          "Flo Rida",
+          "Jason Derulo",
+          "Christina Aguilera",
+          "Ciara",
+          "Pitbull",
+          "Chris Brown",
+          "Enrique Iglesias",
+          "Bruno Mars",
+          "Robin Thicke",
+          "Britney Spears",
+          "Fergie",
+          "Mariah Carey",
+          "Alicia Keys"
+        ]
+      }
+    }
+  },
+  "erinlyons": {
+    "artists": {
+      "Ariana Grande": {
+        "results": [
+          "Elizabeth Gillies",
+          "Victoria Justice",
+          "Fifth Harmony",
+          "Becky G",
+          "Bridgit Mendler",
+          "Austin Mahone",
+          "Little Mix",
+          "Mcclain",
+          "Cimorelli",
+          "Ross Lynch",
+          "Coco Jones",
+          "Nick Jonas",
+          "R5",
+          "Pia Mia",
+          "Miranda Cosgrove",
+          "Madison Beer",
+          "Benjamin Lasnier",
+          "Cher Lloyd",
+          "Camila Cabello",
+          "Meghan Trainor"
+        ]
+      },
+      "Ed Sheeran": {
+        "results": [
+          "Olly Murs",
+          "The Vamps",
+          "Shawn Mendes",
+          "Passenger",
+          "Rizzle Kicks",
+          "5 Seconds Of Summer",
+          "Little Mix",
+          "Sam Smith",
+          "James Arthur",
+          "A Great Big World",
+          "James Bay",
+          "John Newman",
+          "Nina Nesbitt",
+          "Labrinth",
+          "Harry Styles",
+          "Niall Horan",
+          "Louis Tomlinson",
+          "Birdy",
+          "Liam Payne",
+          "George Ezra"
+        ]
+      },
+      "Taylor Swift": {
+        "results": [
+          "Demi Lovato",
+          "Britney Spears",
+          "Ariana Grande",
+          "Selena Gomez",
+          "Miley Cyrus",
+          "Kesha",
+          "Katy Perry",
+          "Bridgit Mendler",
+          "Carly Rae Jepsen",
+          "Justin Bieber",
+          "Nick Jonas",
+          "Jonas Brothers",
+          "Victoria Justice",
+          "Carrie Underwood",
+          "One Direction",
+          "Lady Antebellum",
+          "Kelly Clarkson",
+          "Jennifer Lopez",
+          "Avril Lavigne",
+          "Enrique Iglesias"
+        ]
       }
     }
   }
+}
