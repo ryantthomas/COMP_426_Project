@@ -1,5 +1,8 @@
 $(function(){
     $('.box').on('click', '.button', onLogin)
+    $('#main').on('click', '.deleteButton', function() {
+        $('#message').empty();
+    });
 });
 
 async function onLogin(event){
@@ -20,8 +23,23 @@ async function loginCall(username, pass){
             name: username,
             pass: pass,
         }
+    }).then(
+        (response) => {
+            // alert("Response " + response.status);
+            $('#message').empty();
+            $('#message').append('<div class = "notification is-success">' +
+            '<button class = "delete deleteButton"></button>Successfully logged in. Redirecting in 3 seconds or click to return to the ' + 
+            '<a href  = "../index.html">homepage' + '</div>');
+
+            setTimeout(function() {window.location.replace("../index.html");}, 3000);
+            return response.data.jwt;
+        }
+    ).catch(err => {
+        // alert("Error " + err.response.status);
+        $('#message').empty();
+        $('#message').append('<div class = "notification is-danger">' +
+        '<button class = "delete deleteButton" id = "delete"></button>Unable to login: ' + err.response.status +' error </div>');
     });
-    return response.data.jwt;
 };
 
 
