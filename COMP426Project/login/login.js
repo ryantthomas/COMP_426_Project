@@ -16,7 +16,7 @@ async function onLogin(event){
 };
 
 async function loginCall(username, pass){
-    const response = await axios({
+    const loginResponse = await axios({
         method: "post",
         url: "http://localhost:3000/account/login",
         data: {
@@ -39,6 +39,7 @@ async function loginCall(username, pass){
         $('#message').append('<div class = "notification is-danger">' +
         '<button class = "delete deleteButton" id = "delete"></button>Unable to login: ' + err.response.status +' error </div>');
     });
+    return loginResponse.data.jwt;
 };
 
 
