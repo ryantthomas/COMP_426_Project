@@ -34,13 +34,6 @@
         "email": "shua@email.unc.edu",
         "fullName": "Josh"
       }
-    },
-    "randomuser": {
-      "passwordHash": "$2a$10$2Fw9CWgOmt5t9MYvD0lEZu58q/2iy5htiLLarX96zJQ3DIhDZnwYS",
-      "data": {
-        "email": "random@email.com",
-        "fullName": "Testing"
-      }
     }
   }
 }
