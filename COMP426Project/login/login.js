@@ -16,7 +16,7 @@ async function onLogin(event){
 };
 
 async function loginCall(username, pass){
-    const response = await axios({
+    const loginResponse = await axios({
         method: "post",
         url: "http://localhost:3000/account/login",
         data: {
@@ -32,7 +32,6 @@ async function loginCall(username, pass){
             '<a href  = "../index.html">homepage' + '</div>');
 
             setTimeout(function() {window.location.replace("../index.html");}, 3000);
-            return response.data.jwt;
         }
     ).catch(err => {
         // alert("Error " + err.response.status);
@@ -40,6 +39,7 @@ async function loginCall(username, pass){
         $('#message').append('<div class = "notification is-danger">' +
         '<button class = "delete deleteButton" id = "delete"></button>Unable to login: ' + err.response.status +' error </div>');
     });
+    return loginResponse.data.jwt;
 };
 
 
