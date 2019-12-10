@@ -34,6 +34,13 @@
         "email": "shua@email.unc.edu",
         "fullName": "Josh"
       }
+    },
+    "hopegattis": {
+      "passwordHash": "$2a$10$IIYIrZb0VipelaLI.X3wP.8hyKAs4JyWiUWTsxutYL9h7CxjeTCz.",
+      "data": {
+        "email": "hopeg567@gmail.com",
+        "fullName": "Hope Gattis"
+      }
     }
   }
 }
