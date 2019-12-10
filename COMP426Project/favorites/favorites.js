@@ -191,6 +191,9 @@ async function updateSuggestion(id) {
 }
 
 $(function(){
+    if (window.localStorage.getItem('jwt') == null){
+        $('#root').append(`<div class="title has-text-centered has-background-danger section is-2 has-text-white box">PLEASE LOG IN TO SEE USER SUGGESTIONS!</div>`);
+    }
     renderFavorites();
     $('#main').on('click', '.submit', onSubmit);
     $('#main').on('click', '.delete-btn', onDelete);
