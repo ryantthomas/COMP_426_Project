@@ -102,5 +102,141 @@
         ]
       }
     }
+  },
+  "ryansusername": {
+    "artists": {
+      "Adam Lambert": {
+        "results": [
+          "Allison Iraheta",
+          "David Cook",
+          "Cinema Bizarre",
+          "Orianthi",
+          "Kris Allen",
+          "Jesse Mccartney",
+          "O-Zone",
+          "David Archuleta",
+          "Nick Lachey",
+          "Junoon",
+          "Iyaz",
+          "Jeffree Star",
+          "Diddy - Dirty Money",
+          "Lindsay Lohan",
+          "Ashley Parker Angel",
+          "Kelly Clarkson",
+          "Hot Chelle Rae",
+          "Sugababes",
+          "Eli Lieb",
+          "Matthew Morrison"
+        ]
+      }
+    }
+  },
+  "unc": {
+    "artists": {
+      "Adele": {
+        "results": [
+          "Christina Perri",
+          "Duffy",
+          "Jennifer Lopez",
+          "Christina Aguilera",
+          "Alicia Keys",
+          "Kelly Clarkson",
+          "Emeli Sandé",
+          "Jessie J",
+          "Bruno Mars",
+          "Beyoncé",
+          "Katy Perry",
+          "Maroon 5",
+          "Amy Winehouse",
+          "Kesha",
+          "Whitney Houston",
+          "Sara Bareilles",
+          "Shakira",
+          "Leona Lewis",
+          "Justin Timberlake",
+          "Britney Spears"
+        ]
+      }
+    }
+  },
+  "unc2020": {
+    "artists": {
+      "Adele": {
+        "results": [
+          "Duffy",
+          "Jessie J",
+          "Bruno Mars",
+          "Christina Perri",
+          "Alicia Keys",
+          "Jennifer Lopez",
+          "Christina Aguilera",
+          "Kelly Clarkson",
+          "Emeli Sandé",
+          "Beyoncé",
+          "Katy Perry",
+          "Maroon 5",
+          "Amy Winehouse",
+          "Kesha",
+          "Whitney Houston",
+          "Leona Lewis",
+          "Sara Bareilles",
+          "Shakira",
+          "Britney Spears",
+          "Justin Timberlake"
+        ]
+      }
+    }
+  },
+  "tarheel": {
+    "artists": {
+      "Adele": {
+        "results": [
+          "Bruno Mars",
+          "Duffy",
+          "Christina Perri",
+          "Jennifer Lopez",
+          "Christina Aguilera",
+          "Jessie J",
+          "Maroon 5",
+          "Alicia Keys",
+          "Kelly Clarkson",
+          "Emeli Sandé",
+          "Beyoncé",
+          "Katy Perry",
+          "Amy Winehouse",
+          "Kesha",
+          "Whitney Houston",
+          "Shakira",
+          "Britney Spears",
+          "Leona Lewis",
+          "Justin Timberlake",
+          "Sara Bareilles"
+        ]
+      },
+      "Coldplay": {
+        "results": [
+          "James Blunt",
+          "Kings Of Leon",
+          "Keane",
+          "U2",
+          "Jason Mraz",
+          "The Killers",
+          "Imagine Dragons",
+          "Travis",
+          "Oasis",
+          "John Mayer",
+          "Train",
+          "Lifehouse",
+          "Snow Patrol",
+          "Onerepublic",
+          "The Fray",
+          "David Guetta",
+          "Maroon 5",
+          "The Script",
+          "James Morrison",
+          "Avicii"
+        ]
+      }
+    }
   }
 }

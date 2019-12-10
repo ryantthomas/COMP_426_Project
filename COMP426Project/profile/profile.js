@@ -4,7 +4,7 @@ $(function(){
 
 let checkIfUser = function(){
     if (window.localStorage.getItem('jwt') == null){
-        alert("Not logged into an account. Please log in to access this page.")
+        $('#root').append(`<div class="title has-text-centered has-background-warning section is-2 has-text-black box">PLEASE LOG IN TO SEE USER SUGGESTIONS!</div>`);
     }
     else{
         renderInfo();

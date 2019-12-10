@@ -34,6 +34,41 @@
         "email": "shua@email.unc.edu",
         "fullName": "Josh"
       }
+    },
+    "ryansusername": {
+      "passwordHash": "$2a$10$A/NO1mOtVQgPZHmstUHDuOOSu7YA9Y3G5dST1jazrwx6fVDOF/Hoi",
+      "data": {
+        "email": "ryanthomas5@gmail.com",
+        "fullName": "Ryan"
+      }
+    },
+    "username": {
+      "passwordHash": "$2a$10$SteQwyFVKT76avjUhi4RouQ9PC0FnTRJWX/v2KU6tpGhZGZEOdSOS",
+      "data": {
+        "email": "bob@gmail.com",
+        "fullName": "bob"
+      }
+    },
+    "unc": {
+      "passwordHash": "$2a$10$ExbmNq/P7ot/MuznGLegDeHRNFbNIVHAV9sk6d9o0usQWgeql5AIG",
+      "data": {
+        "email": "unc@unc.edu",
+        "fullName": "UNC"
+      }
+    },
+    "unc2020": {
+      "passwordHash": "$2a$10$.qELJzDnCFHw/vi6tli2H.BW9q5YqsVQ68BEIGhsE6feN4EWjvA2i",
+      "data": {
+        "email": "unc@live.unc.edu",
+        "fullName": "UNC"
+      }
+    },
+    "tarheel": {
+      "passwordHash": "$2a$10$uAb4wPZYmBPF.19.bCgcvOcQ7AkUESaR3erJJcbWhChVx/vQ.pobm",
+      "data": {
+        "email": "tarheel@gmail.com",
+        "fullName": "Tarheel"
+      }
     }
   }
 }
