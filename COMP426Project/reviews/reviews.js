@@ -11,7 +11,7 @@ export const onReview = async function(event) {
     let review = $('.textarea').val();
     await postReview(review);
     $('.form').replaceWith(`<form class = "form"> <label class = "label is-large"> Leave your comments here </label>
-     <textarea class = "textarea is-family-monospace is-large">Share your thoughts!</textarea> 
+     <textarea placeholder = "Share your thoughts!" class = "textarea is-family-monospace is-large"></textarea> 
      <br> <button class = "button is-dark is-family-monospace is-large"> Submit </button> 
     </form>`);
     $('#reviews').replaceWith(`<div id = "reviews" class = "section has-background-light">
